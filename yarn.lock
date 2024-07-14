@@ -1883,6 +1883,24 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
   integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
 
+"@popswap/sdk@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@popswap/sdk/-/sdk-0.0.2.tgz#99b31520531bc21ee0027a4f1be47212c16a1f8c"
+  integrity sha512-ep5XqGABKEG2VJVFS3Atcs9fTCinku4nbZ4wuVyq/IbLL9yGUZguqFlBRUMHjgV0lHbUQ+pgKaTUbEHiu6fCrQ==
+  dependencies:
+    "@uniswap/v2-core" "^1.0.0"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.1"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
+
+"@popswap/token-list@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@popswap/token-list/-/token-list-0.0.1.tgz#e411b96baddd2093719de6bb2145720fd166ebc2"
+  integrity sha512-kxdMhiYbPKRS8MvR0kkcSmi/lFv9bHa58iwgskCC6d3wSv8mmIXUsz1tN6161FcdCzipEu6paePlEZk+J9CU+Q==
+
 "@portis/eth-json-rpc-middleware@^4.1.2":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@portis/eth-json-rpc-middleware/-/eth-json-rpc-middleware-4.1.2.tgz#391e392da03dea348c8111a8111ce4550aa24a02"
@@ -2555,10 +2573,10 @@
   resolved "https://registry.yarnpkg.com/@uniswap/lib/-/lib-1.1.1.tgz#0afd29601846c16e5d082866cbb24a9e0758e6bc"
   integrity sha512-2yK7sLpKIT91TiS5sewHtOa7YuM8IuBXVl4GZv2jZFys4D2sY7K5vZh6MqD25TPA95Od+0YzCVq6cTF2IKrOmg==
 
-"@uniswap/sdk@3.0.3-beta.1":
-  version "3.0.3-beta.1"
-  resolved "https://registry.yarnpkg.com/@uniswap/sdk/-/sdk-3.0.3-beta.1.tgz#ef758f45e1f7050e098956fce097aedb87e0ceed"
-  integrity sha512-8MqfVDXAHHcAnUxBAaoHdeGmLUc8Tu4GZ4n7kLabKlF2b4RUS/jnuUIdzOR9QPMdY/avw3gH/OtTxH2elDNShw==
+"@uniswap/sdk@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@uniswap/sdk/-/sdk-3.0.3.tgz#8201c7c72215d0030cb99acc7e661eff895c18a9"
+  integrity sha512-t4s8bvzaCFSiqD2qfXIm3rWhbdnXp+QjD3/mRaeVDHK7zWevs6RGEb1ohMiNgOCTZANvBayb4j8p+XFdnMBadQ==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
@@ -2568,10 +2586,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@uniswap/token-lists@^1.0.0-beta.11":
-  version "1.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.11.tgz#365dd55d536c67fa550554c0658391bfbc2930b7"
-  integrity sha512-dGHdb58d+rN7G164ziPP6omb1R0hwBVgs95er83OzXKkVRlLKE/FLSdgpDaTxLj1war+P/hZXw2/ToYcKFsobQ==
+"@uniswap/token-lists@1.0.0-beta.34":
+  version "1.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.34.tgz#879461f5d4009327a24259bbab797e0f22db58c8"
+  integrity sha512-Hc3TfrFaupg0M84e/Zv7BoF+fmMWDV15mZ5s8ZQt2qZxUcNw2GQW+L6L/2k74who31G+p1m3GRYbJpAo7d1pqA==
 
 "@uniswap/v2-core@1.0.0":
   version "1.0.0"

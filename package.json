@@ -1,6 +1,6 @@
 {
-  "name": "@uniswap/interface",
-  "description": "Uniswap Interface",
+  "name": "@popswap/interface",
+  "description": "PopSwap Interface",
   "homepage": ".",
   "private": true,
   "devDependencies": {
@@ -23,8 +23,10 @@
     "@types/testing-library__cypress": "^5.0.5",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "@uniswap/sdk": "3.0.3-beta.1",
-    "@uniswap/token-lists": "^1.0.0-beta.11",
+    "@popswap/sdk": "0.0.2",
+    "@popswap/token-list": "0.0.1",
+    "@uniswap/sdk": "3.0.3",
+    "@uniswap/token-lists": "1.0.0-beta.34",
     "@uniswap/v2-core": "1.0.0",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "@web3-react/core": "^6.0.9",

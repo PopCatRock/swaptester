@@ -1,4 +1,5 @@
-import { Currency, CurrencyAmount, Pair, Token, Trade } from '@uniswap/sdk'
+import { CurrencyAmount, Pair, Currency, Token, Trade } from '@popswap/sdk'
+import {} from '@uniswap/sdk'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI, Trade } from '@uniswap/sdk'
+import { CurrencyAmount, JSBI, Trade } from '@popswap/sdk'
 import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import ReactGA from 'react-ga'
@@ -67,7 +67,6 @@ export default function Swap() {
   // swap state
   const { independentField, typedValue, recipient } = useSwapState()
   const {
-    v1Trade,
     v2Trade,
     currencyBalances,
     parsedAmount,
@@ -85,14 +84,14 @@ export default function Swap() {
   const trade = showWrap
     ? undefined
     : {
-        [Version.v1]: v1Trade,
+        [Version.v1]: v2Trade,
         [Version.v2]: v2Trade
       }[toggledVersion]
 
   const betterTradeLinkVersion: Version | undefined =
-    toggledVersion === Version.v2 && isTradeBetter(v2Trade, v1Trade, BETTER_TRADE_LINK_THRESHOLD)
+    toggledVersion === Version.v2 && isTradeBetter(v2Trade, v2Trade, BETTER_TRADE_LINK_THRESHOLD)
       ? Version.v1
-      : toggledVersion === Version.v1 && isTradeBetter(v1Trade, v2Trade)
+      : toggledVersion === Version.v1 && isTradeBetter(v2Trade, v2Trade)
       ? Version.v2
       : undefined
 

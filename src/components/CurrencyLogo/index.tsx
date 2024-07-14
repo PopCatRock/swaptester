@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@uniswap/sdk'
+import { Currency, ETHER, Token } from '@popswap/sdk'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
@@ -7,7 +7,7 @@ import { WrappedTokenInfo } from '../../state/lists/hooks'
 import uriToHttp from '../../utils/uriToHttp'
 
 const getTokenLogoURL = address =>
-  `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`
+  `https://raw.githubusercontent.com/excoinsevm/default-token-list/main/src/tokens/CoinLogos/${address}.png`
 const BAD_URIS: { [tokenAddress: string]: true } = {}
 
 const Image = styled.img<{ size: string }>`
