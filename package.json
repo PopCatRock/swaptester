@@ -25,7 +25,6 @@
     "@typescript-eslint/parser": "^2.31.0",
     "@popswap/sdk": "0.0.2",
     "@popswap/token-list": "0.0.1",
-    "@uniswap/sdk": "3.0.3",
     "@uniswap/token-lists": "1.0.0-beta.34",
     "@uniswap/v2-core": "1.0.0",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
