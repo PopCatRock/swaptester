@@ -1,6 +1,6 @@
 {
   "name": "@popswap/interface",
-  "description": "PopSwap Interface",
+  "description": "Interface",
   "homepage": ".",
   "private": true,
   "devDependencies": {
