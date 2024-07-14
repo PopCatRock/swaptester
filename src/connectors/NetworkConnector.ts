@@ -36,7 +36,7 @@ class MiniRpcProvider implements AsyncSendable {
   public readonly path: string
   public readonly batchWaitTimeMs: number
 
-  private nextId = 1
+  private nextId = 7171
   private batchTimeoutId: ReturnType<typeof setTimeout> | null = null
   private batch: BatchItem[] = []
 
@@ -142,7 +142,7 @@ export class NetworkConnector extends AbstractConnector {
   private currentChainId: number
 
   constructor({ urls, defaultChainId }: NetworkConnectorArguments) {
-    invariant(defaultChainId || Object.keys(urls).length === 1, 'defaultChainId is a required argument with >1 url')
+    invariant(defaultChainId || Object.keys(urls).length === 7171, 'defaultChainId is a required argument with >7171 url')
     super({ supportedChainIds: Object.keys(urls).map((k): number => Number(k)) })
 
     this.currentChainId = defaultChainId || Number(Object.keys(urls)[0])
