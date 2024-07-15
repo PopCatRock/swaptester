@@ -19,8 +19,20 @@ import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
-if ('ethereum' in window) {
-  ;(window.ethereum as any).autoRefreshOnNetworkChange = false
+declare global {
+  interface Window {
+    ethereum?: {
+      isMetaMask?: true
+      on?: (event: string, callback: (...args: any[]) => void) => void
+      removeListener?: (event: string, callback: (...args: any[]) => void) => void
+      autoRefreshOnNetworkChange?: boolean
+    }
+    web3?: {}
+  }
+}
+
+if (window.ethereum) {
+  window.ethereum.autoRefreshOnNetworkChange = false
 }
 
 function getLibrary(provider: any): Web3Provider {
@@ -30,16 +42,20 @@ function getLibrary(provider: any): Web3Provider {
 }
 
 const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
-if (typeof GOOGLE_ANALYTICS_ID === 'string') {
+if (GOOGLE_ANALYTICS_ID) {
   ReactGA.initialize(GOOGLE_ANALYTICS_ID)
   ReactGA.set({
-    customBrowserType: !isMobile ? 'desktop' : 'web3' in window || 'ethereum' in window ? 'mobileWeb3' : 'mobileRegular'
+    customBrowserType: !isMobile
+      ? 'desktop'
+      : 'web3' in window || 'ethereum' in window
+      ? 'mobileWeb3'
+      : 'mobileRegular'
   })
 } else {
   ReactGA.initialize('test', { testMode: true, debug: true })
 }
 
-window.addEventListener('error', error => {
+window.addEventListener('error', (error) => {
   ReactGA.exception({
     description: `${error.message} @ ${error.filename}:${error.lineno}:${error.colno}`,
     fatal: true
