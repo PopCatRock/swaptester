@@ -20,7 +20,10 @@ import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
 if (window.ethereum) {
-  window.ethereum.autoRefreshOnNetworkChange = false
+  // Check if autoRefreshOnNetworkChange is supported before setting it
+  if ('autoRefreshOnNetworkChange' in window.ethereum) {
+    window.ethereum.autoRefreshOnNetworkChange = false
+  }
 }
 
 function getLibrary(provider: any): Web3Provider {
