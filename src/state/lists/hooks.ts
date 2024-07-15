@@ -1,5 +1,5 @@
 import { ChainId, Token } from '@popswap/sdk'
-import { TokenInfo, TokenList } from '@uniswap/token-lists'
+import { TokenInfo, TokenList } from '@popswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { DEFAULT_TOKEN_LIST_URL } from '../../constants'

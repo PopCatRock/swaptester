@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit'
-import { getVersionUpgrade, VersionUpgrade } from '@uniswap/token-lists'
-import { TokenList } from '@uniswap/token-lists/dist/types'
+import { getVersionUpgrade, VersionUpgrade } from '@popswap/token-lists'
+import { TokenList } from '@popswap/token-lists/dist/types'
 import { updateVersion } from '../user/actions'
 import { acceptListUpdate, addList, fetchTokenList } from './actions'
 

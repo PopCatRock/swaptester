@@ -1,4 +1,4 @@
-import { TokenList, Version } from '@uniswap/token-lists'
+import { TokenList, Version } from '@popswap/token-lists'
 import React, { useCallback, useContext } from 'react'
 import { AlertCircle, Info } from 'react-feather'
 import { useDispatch } from 'react-redux'

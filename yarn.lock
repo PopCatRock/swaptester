@@ -1896,10 +1896,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@popswap/token-list@0.0.1":
+"@popswap/token-lists@0.0.1":
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@popswap/token-list/-/token-list-0.0.1.tgz#e411b96baddd2093719de6bb2145720fd166ebc2"
-  integrity sha512-kxdMhiYbPKRS8MvR0kkcSmi/lFv9bHa58iwgskCC6d3wSv8mmIXUsz1tN6161FcdCzipEu6paePlEZk+J9CU+Q==
+  resolved "https://registry.yarnpkg.com/@popswap/token-lists/-/token-lists-0.0.1.tgz#7b1d7ba6f5e7e67fba75141533553de6280d4065"
+  integrity sha512-FjzrYGaxNabfw2N1Z/2ScsP3wrZGto+C81tHAIWkr6zEL+SpIyPax87d8hO+3hYuIB6lJh75OmaDnhKm5+0wJw==
 
 "@portis/eth-json-rpc-middleware@^4.1.2":
   version "4.1.2"
@@ -2572,24 +2572,6 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@uniswap/lib/-/lib-1.1.1.tgz#0afd29601846c16e5d082866cbb24a9e0758e6bc"
   integrity sha512-2yK7sLpKIT91TiS5sewHtOa7YuM8IuBXVl4GZv2jZFys4D2sY7K5vZh6MqD25TPA95Od+0YzCVq6cTF2IKrOmg==
-
-"@uniswap/sdk@3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@uniswap/sdk/-/sdk-3.0.3.tgz#8201c7c72215d0030cb99acc7e661eff895c18a9"
-  integrity sha512-t4s8bvzaCFSiqD2qfXIm3rWhbdnXp+QjD3/mRaeVDHK7zWevs6RGEb1ohMiNgOCTZANvBayb4j8p+XFdnMBadQ==
-  dependencies:
-    "@uniswap/v2-core" "^1.0.0"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
-"@uniswap/token-lists@1.0.0-beta.34":
-  version "1.0.0-beta.34"
-  resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.34.tgz#879461f5d4009327a24259bbab797e0f22db58c8"
-  integrity sha512-Hc3TfrFaupg0M84e/Zv7BoF+fmMWDV15mZ5s8ZQt2qZxUcNw2GQW+L6L/2k74who31G+p1m3GRYbJpAo7d1pqA==
 
 "@uniswap/v2-core@1.0.0":
   version "1.0.0"

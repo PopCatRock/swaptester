@@ -1,4 +1,4 @@
-import { getVersionUpgrade, minVersionBump, VersionUpgrade } from '@uniswap/token-lists'
+import { getVersionUpgrade, minVersionBump, VersionUpgrade } from '@popswap/token-lists'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { DEFAULT_TOKEN_LIST_URL } from '../../constants'

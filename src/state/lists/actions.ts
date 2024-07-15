@@ -1,7 +1,7 @@
 import { createAction, createAsyncThunk } from '@reduxjs/toolkit'
-import { TokenList } from '@uniswap/token-lists'
-import { Version } from '@uniswap/token-lists'
-import schema from '@uniswap/token-lists/src/tokenlist.schema.json'
+import { TokenList } from '@popswap/token-lists'
+import { Version } from '@popswap/token-lists'
+import schema from '@popswap/token-lists/src/tokenlist.schema.json'
 import Ajv from 'ajv'
 import uriToHttp from '../../utils/uriToHttp'
 
