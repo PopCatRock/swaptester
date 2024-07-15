@@ -19,18 +19,6 @@ import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
-declare global {
-  interface Window {
-    ethereum?: {
-      isMetaMask?: true
-      on?: (event: string, callback: (...args: any[]) => void) => void
-      removeListener?: (event: string, callback: (...args: any[]) => void) => void
-      autoRefreshOnNetworkChange?: boolean
-    }
-    web3?: {}
-  }
-}
-
 if (window.ethereum) {
   window.ethereum.autoRefreshOnNetworkChange = false
 }
