@@ -29,6 +29,8 @@
     "cypress"
   ],
   "include": [
+    "src",
+    "../global.d.ts",
     "**/*.js",
     "**/*.ts",
     "**/*.tsx"
