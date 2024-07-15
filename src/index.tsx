@@ -20,17 +20,17 @@ import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme';
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName);
 
 if ('ethereum' in window) {
-  window.ethereum.autoRefreshOnNetworkChange = false;
+  ;(window.ethereum as any).autoRefreshOnNetworkChange = false;
 }
 
-function getLibrary(provider) {
+function getLibrary(provider: any): Web3Provider {
   const library = new Web3Provider(provider);
   library.pollingInterval = 15000;
   return library;
 }
 
-const GOOGLE_ANALYTICS_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
-if (GOOGLE_ANALYTICS_ID) {
+const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
+if (typeof GOOGLE_ANALYTICS_ID === 'string') {
   ReactGA.initialize(GOOGLE_ANALYTICS_ID);
   ReactGA.set({
     customBrowserType: !isMobile ? 'desktop' : 'web3' in window || 'ethereum' in window ? 'mobileWeb3' : 'mobileRegular',
