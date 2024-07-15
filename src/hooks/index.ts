@@ -14,28 +14,32 @@ export function useActiveWeb3React(): Web3ReactContextInterface<Web3Provider> & 
 }
 
 export function useEagerConnect() {
-  const { activate, active } = useWeb3ReactCore() // specifically using useWeb3ReactCore because of what this hook does
+  const { activate, active } = useWeb3ReactCore()
   const [tried, setTried] = useState(false)
 
   useEffect(() => {
     injected.isAuthorized().then(isAuthorized => {
       if (isAuthorized) {
-        activate(injected, undefined, true).catch(() => {
+        activate(injected, undefined, true).catch(error => {
+          console.error("Failed to activate due to authorization:", error)
           setTried(true)
         })
       } else {
         if (isMobile && window.ethereum) {
-          activate(injected, undefined, true).catch(() => {
+          activate(injected, undefined, true).catch(error => {
+            console.error("Failed to activate on mobile with window.ethereum:", error)
             setTried(true)
           })
         } else {
           setTried(true)
         }
       }
+    }).catch(error => {
+      console.error("Failed to check authorization:", error)
+      setTried(true)
     })
-  }, [activate]) // intentionally only running on mount (make sure it's only mounted once :))
+  }, [activate])
 
-  // if the connection worked, wait until we get confirmation of that to flip the flag
   useEffect(() => {
     if (active) {
       setTried(true)
@@ -50,14 +54,13 @@ export function useEagerConnect() {
  * and out after checking what network theyre on
  */
 export function useInactiveListener(suppress = false) {
-  const { active, error, activate } = useWeb3ReactCore() // specifically using useWeb3React because of what this hook does
+  const { active, error, activate } = useWeb3ReactCore()
 
   useEffect(() => {
     const { ethereum } = window
 
     if (ethereum && ethereum.on && !active && !error && !suppress) {
       const handleChainChanged = () => {
-        // eat errors
         activate(injected, undefined, true).catch(error => {
           console.error('Failed to activate after chain changed', error)
         })
@@ -65,7 +68,6 @@ export function useInactiveListener(suppress = false) {
 
       const handleAccountsChanged = (accounts: string[]) => {
         if (accounts.length > 0) {
-          // eat errors
           activate(injected, undefined, true).catch(error => {
             console.error('Failed to activate after accounts changed', error)
           })
@@ -82,6 +84,5 @@ export function useInactiveListener(suppress = false) {
         }
       }
     }
-    return
   }, [active, error, suppress, activate])
 }
