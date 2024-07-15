@@ -20,7 +20,7 @@ import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
 if (window.ethereum) {
-  // Check if autoRefreshOnNetworkChange is supported before setting it
+  // Check if 'ethereum' is defined and not 'never'
   if ('autoRefreshOnNetworkChange' in window.ethereum) {
     window.ethereum.autoRefreshOnNetworkChange = false
   }
