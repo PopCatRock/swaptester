@@ -7,7 +7,7 @@ import { WrappedTokenInfo } from '../../state/lists/hooks'
 import uriToHttp from '../../utils/uriToHttp'
 
 const getTokenLogoURL = address =>
-  `https://raw.githubusercontent.com/excoinsevm/default-token-list/main/src/tokens/CoinLogos/${address}.png`
+  `https://popcatrock.github.io/token-list/src/tokens/CoinLogos/${address}.png`
 const BAD_URIS: { [tokenAddress: string]: true } = {}
 
 const Image = styled.img<{ size: string }>`
