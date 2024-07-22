@@ -100,12 +100,12 @@ export function TokenWarningCards({ currencies }: { currencies: { [field in Fiel
           <TYPE.main color={'red2'}>Token imported</TYPE.main>
         </AutoRow>
         <TYPE.body color={'red2'}>
-          Anyone can create and name any ERC20 token on Ethereum, including creating fake versions of existing tokens
+          Anyone can create and name any BROCK20 token on Bitrock, including creating fake versions of existing tokens
           and tokens that claim to represent projects that do not have a token.
         </TYPE.body>
         <TYPE.body color={'red2'}>
-          Similar to Etherscan, this site can load arbitrary tokens via token addresses. Please do your own research
-          before interacting with any ERC20 token.
+          Similar to Bitrock Explorer, this site can load arbitrary tokens via token addresses. Please do your own research
+          before interacting with any BROCK20 token.
         </TYPE.body>
         {Object.keys(currencies).map(field => {
           const dismissed = field === Field.INPUT ? dismissedToken0 : dismissedToken1
