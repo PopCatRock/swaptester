@@ -121,7 +121,7 @@ export default function Menu() {
             <Code size={14} />
             Code Soon
           </MenuItem>
-          <MenuItem id="link" href="https://t.me.popcatrock">
+          <MenuItem id="link" href="https://t.me/popcatrock">
             <MessageCircle size={14} />
             Telegram
           </MenuItem>
