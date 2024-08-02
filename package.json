@@ -6,6 +6,8 @@
   "devDependencies": {
     "@ethersproject/experimental": "^5.0.1",
     "@popperjs/core": "^2.4.4",
+    "@popswap/sdk": "0.0.2",
+    "@popswap/token-lists": "0.0.1",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
     "@reduxjs/toolkit": "^1.3.5",
@@ -23,8 +25,6 @@
     "@types/testing-library__cypress": "^5.0.5",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "@popswap/sdk": "0.0.2",
-    "@popswap/token-lists": "0.0.1",
     "@uniswap/v2-core": "1.0.0",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "@web3-react/core": "^6.0.9",
@@ -98,5 +98,6 @@
       "last 1 safari version"
     ]
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {}
 }
