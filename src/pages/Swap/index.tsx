@@ -299,7 +299,7 @@ export default function Swap() {
                   </ArrowWrapper>
                   {recipient === null && !showWrap ? (
                     <LinkStyledButton id="add-recipient-button" onClick={() => onChangeRecipient('')}>
-                      + Add a send (optional)
+                      + Swap to another address (optional)
                     </LinkStyledButton>
                   ) : null}
                 </AutoRow>
