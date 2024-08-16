@@ -31,8 +31,8 @@ const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } 
   {}
 ) as any
 
-const white = '#E8EAF6';
-const black = '#1A237E';
+const white = '#F5F5F5';
+const black = '#1B1B1B';
 
 export function colors(darkMode: boolean): Colors {
   return {
@@ -41,48 +41,48 @@ export function colors(darkMode: boolean): Colors {
     black,
 
     // text
-    text1: darkMode ? '#FF8A80' : '#263238', // Soft red for dark mode, dark blue-grey for light mode
-    text2: darkMode ? '#FF5252' : '#37474F', // Bright red for dark mode, blue-grey for light mode
-    text3: darkMode ? '#FF1744' : '#455A64', // Vivid red for dark mode, blue-grey for light mode
-    text4: darkMode ? '#D50000' : '#607D8B', // Deep red for dark mode, grey-blue for light mode
-    text5: darkMode ? '#C51162' : '#78909C', // Pink-red for dark mode, grey-blue for light mode
+    text1: darkMode ? '#B3E5FC' : '#1F2937', // Light sky blue for dark mode, dark grey for light mode
+    text2: darkMode ? '#81D4FA' : '#374151', // Sky blue for dark mode, grey for light mode
+    text3: darkMode ? '#4FC3F7' : '#4B5563', // Lighter sky blue for dark mode, grey for light mode
+    text4: darkMode ? '#29B6F6' : '#6B7280', // Soft blue for dark mode, light grey for light mode
+    text5: darkMode ? '#0288D1' : '#9CA3AF', // Deep blue for dark mode, lighter grey for light mode
 
     // backgrounds / greys
-    bg1: darkMode ? '#0D47A1' : '#ECEFF1', // Deep blue for dark mode, light blue-grey for light mode
-    bg2: darkMode ? '#1565C0' : '#CFD8DC', // Blue for dark mode, light blue-grey for light mode
-    bg3: darkMode ? '#1976D2' : '#B0BEC5', // Mid blue for dark mode, light blue-grey for light mode
-    bg4: darkMode ? '#1E88E5' : '#90A4AE', // Lighter blue for dark mode, blue-grey for light mode
-    bg5: darkMode ? '#42A5F5' : '#78909C', // Sky blue for dark mode, grey-blue for light mode
+    bg1: darkMode ? '#121212' : '#F9FAFB', // Very dark grey for dark mode, light grey for light mode
+    bg2: darkMode ? '#1E1E1E' : '#F3F4F6', // Dark grey for dark mode, light grey for light mode
+    bg3: darkMode ? '#2C2C2C' : '#E5E7EB', // Mid grey for dark mode, light grey for light mode
+    bg4: darkMode ? '#383838' : '#D1D5DB', // Lighter grey for dark mode, light grey for light mode
+    bg5: darkMode ? '#454545' : '#9CA3AF', // Even lighter grey for dark mode, grey for light mode
 
     // specialty colors
-    modalBG: darkMode ? 'rgba(255,82,82,0.425)' : 'rgba(38,50,56,0.3)',
-    advancedBG: darkMode ? 'rgba(38,50,56,0.1)' : 'rgba(224,247,250,0.6)',
+    modalBG: darkMode ? 'rgba(255,255,255,0.075)' : 'rgba(0,0,0,0.3)',
+    advancedBG: darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.6)',
 
     // primary colors
-    primary1: darkMode ? '#FF4081' : '#3D5AFE', // Pink for dark mode, bright blue for light mode
-    primary2: darkMode ? '#F50057' : '#304FFE', // Deep pink for dark mode, darker blue for light mode
-    primary3: darkMode ? '#C51162' : '#1A237E', // Darker pink for dark mode, deepest blue for light mode
-    primary4: darkMode ? '#880E4F70' : '#8C9EFF', // Very dark pink for dark mode, soft blue for light mode
-    primary5: darkMode ? '#AD145770' : '#B3E5FC', // Dark pink for dark mode, light blue for light mode
+    primary1: darkMode ? '#64B5F6' : '#3B82F6', // Lighter blue for dark mode, blue for light mode
+    primary2: darkMode ? '#42A5F5' : '#2563EB', // Lighter blue for dark mode, blue for light mode
+    primary3: darkMode ? '#2196F3' : '#1D4ED8', // Blue for dark mode, darker blue for light mode
+    primary4: darkMode ? '#1E88E5' : '#93C5FD', // Slightly deeper blue for dark mode, light blue for light mode
+    primary5: darkMode ? '#1976D2' : '#BFDBFE', // Deep blue for dark mode, lighter blue for light mode
 
     // color text
-    primaryText1: darkMode ? '#FF4081' : '#283593', // Pink for dark mode, indigo for light mode
+    primaryText1: darkMode ? '#90CAF9' : '#1E40AF', // Light blue for dark mode, blue for light mode
 
     // secondary colors
-    secondary1: darkMode ? '#FF80AB' : '#536DFE', // Light pink for dark mode, blue for light mode
-    secondary2: darkMode ? '#FF80AB26' : '#8C9EFF', // Light pink for dark mode, soft blue for light mode
-    secondary3: darkMode ? '#FF80AB26' : '#E3F2FD', // Light pink for dark mode, very light blue for light mode
+    secondary1: darkMode ? '#4DD0E1' : '#60A5FA', // Soft cyan for dark mode, blue for light mode
+    secondary2: darkMode ? '#26C6DA' : '#BFDBFE', // Light cyan for dark mode, light blue for light mode
+    secondary3: darkMode ? '#00BCD4' : '#E0EFFF', // Bright cyan for dark mode, very light blue for light mode
 
     // other
-    red1: darkMode ? '#FF5252' : '#D32F2F',
-    red2: darkMode ? '#FF1744' : '#E53935',
-    green1: darkMode ? '#69F0AE' : '#00C853',
-    yellow1: darkMode ? '#FFD600' : '#FFEB3B', // Bright yellow for dark mode, yellow for light mode
-    yellow2: darkMode ? '#FFC400' : '#FFD600' // Golden yellow for dark mode, bright yellow for light mode
+    red1: darkMode ? '#EF5350' : '#DC2626',
+    red2: darkMode ? '#E57373' : '#EF4444',
+    green1: darkMode ? '#81C784' : '#10B981',
+    yellow1: darkMode ? '#FFEB3B' : '#FBBF24', // Bright yellow for dark mode, yellow for light mode
+    yellow2: darkMode ? '#FBC02D' : '#F59E0B' // Golden yellow for dark mode, yellow for light mode
 
     // don't wanna forget these blue yet
-    // blue4: darkMode ? '#FF80AB70' : '#B3E5FC', // Light pink for dark mode, light blue for light mode
-    // blue5: darkMode ? '#FF80AB70' : '#E3F2FD', // Light pink for dark mode, very light blue for light mode
+    // blue4: darkMode ? '#81D4FA70' : '#C4D9F8', // Light blue for dark mode, light blue for light mode
+    // blue5: darkMode ? '#B3E5FC70' : '#EBF4FF', // Light blue for dark mode, blue for light mode
   }
 }
 
