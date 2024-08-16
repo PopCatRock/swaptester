@@ -2,7 +2,7 @@ import { Currency, ETHER, Token } from '@popswap/cubesdk'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import MeterLogo from '../../assets/images/meter-logo.png'
 import { WrappedTokenInfo } from '../../state/lists/hooks'
 import uriToHttp from '../../utils/uriToHttp'
 
@@ -28,7 +28,7 @@ const Emoji = styled.span<{ size?: string }>`
   margin-bottom: -4px;
 `
 
-const StyledEthereumLogo = styled.img<{ size: string }>`
+const StyledmeterLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.075);
@@ -47,7 +47,7 @@ export default function CurrencyLogo({
   const [, refresh] = useState<number>(0)
 
   if (currency === ETHER) {
-    return <StyledEthereumLogo src={EthereumLogo} size={size} {...rest} />
+    return <StyledEthereumLogo src={MeterLogo} size={size} {...rest} />
   }
 
   if (currency instanceof Token) {
@@ -87,7 +87,7 @@ export default function CurrencyLogo({
   return (
     <Emoji {...rest} size={size}>
       <span role="img" aria-label="Thinking">
-       🙀
+       🟥
       </span>
     </Emoji>
   )
