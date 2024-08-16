@@ -28,7 +28,7 @@ const Emoji = styled.span<{ size?: string }>`
   margin-bottom: -4px;
 `
 
-const StyledmeterLogo = styled.img<{ size: string }>`
+const StyledMeterLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.075);
@@ -47,7 +47,7 @@ export default function CurrencyLogo({
   const [, refresh] = useState<number>(0)
 
   if (currency === ETHER) {
-    return <StyledEthereumLogo src={MeterLogo} size={size} {...rest} />
+    return <StyledMeterLogo src={MeterLogo} size={size} {...rest} />
   }
 
   if (currency instanceof Token) {
