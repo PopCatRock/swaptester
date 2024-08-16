@@ -1883,10 +1883,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
   integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
 
-"@popswap/sdk@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@popswap/sdk/-/sdk-0.0.2.tgz#99b31520531bc21ee0027a4f1be47212c16a1f8c"
-  integrity sha512-ep5XqGABKEG2VJVFS3Atcs9fTCinku4nbZ4wuVyq/IbLL9yGUZguqFlBRUMHjgV0lHbUQ+pgKaTUbEHiu6fCrQ==
+"@popswap/sdk@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@popswap/sdk/-/sdk-0.1.0.tgz#2580d89180bf9fc7c65b867a09f13a8c1dbc654b"
+  integrity sha512-po4k5Bc76gEBA/9xnq7RAJj0x1lB4Hug3r8+MxD1SJPu0Fy9H7E0n1xGF9gEpmzRma63zPcuuB8P+BmFLs+1iQ==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
@@ -2385,13 +2385,6 @@
   version "16.9.8"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
   integrity sha512-ykkPQ+5nFknnlU6lDd947WbQ6TE3NNzbQAkInC2EKY1qeYdTKp7onFusmYZb+ityzx2YviqT6BXSu+LyWWJwcA==
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-helmet@^6.1.0":
-  version "6.1.11"
-  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.11.tgz#8cafcafff38f75361f451563ba7b406b0c5d3907"
-  integrity sha512-0QcdGLddTERotCXo3VFlUSWO3ztraw8nZ6e3zJSgG7apwV5xt+pJUS8ewPBqT4NYB1optGLprNQzFleIY84u/g==
   dependencies:
     "@types/react" "*"
 
