@@ -1124,6 +1124,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@bscswap/contracts@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@bscswap/contracts/-/contracts-1.0.2.tgz#c6d639a43018bec808be02004c6a103b923fd604"
+  integrity sha512-/tJ/GviHfCqzGAkO2W2YkDkWNgcySueHfjlqhbXAA1EmOAhIqHr0IbT7PJpE2/dkegEnuv3moCCl2hndK8dHRA==
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -1883,12 +1888,12 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
   integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
 
-"@popswap/sdk@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@popswap/sdk/-/sdk-0.1.0.tgz#2580d89180bf9fc7c65b867a09f13a8c1dbc654b"
-  integrity sha512-po4k5Bc76gEBA/9xnq7RAJj0x1lB4Hug3r8+MxD1SJPu0Fy9H7E0n1xGF9gEpmzRma63zPcuuB8P+BmFLs+1iQ==
+"@popswap/cubesdk@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@popswap/cubesdk/-/cubesdk-0.0.1.tgz#dc3d47a5f3ab39fd1355882003d0fc1b201346d6"
+  integrity sha512-0i1+iQZGw4NxfPFd4kwwMH/OhNQ2Bd3fct0GptoAITL0iGHe3BXhS6740fgOm9WB1WuzFhY1BdM3yZ13y4Ac1Q==
   dependencies:
-    "@uniswap/v2-core" "^1.0.0"
+    "@bscswap/contracts" "1.0.2"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"
@@ -2577,11 +2582,6 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@uniswap/v2-core/-/v2-core-1.0.0.tgz#e0fab91a7d53e8cafb5326ae4ca18351116b0844"
   integrity sha512-BJiXrBGnN8mti7saW49MXwxDBRFiWemGetE58q8zgfnPPzQKq55ADltEILqOt6VFZ22kVeVKbF8gVd8aY3l7pA==
-
-"@uniswap/v2-core@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@uniswap/v2-core/-/v2-core-1.0.1.tgz#af8f508bf183204779938969e2e54043e147d425"
-  integrity sha512-MtybtkUPSyysqLY2U210NBDeCHX+ltHt3oADGdjqoThZaFRDKwM6k1Nb3F0A3hk5hwuQvytFWhrWHOEq6nVJ8Q==
 
 "@uniswap/v2-periphery@^1.1.0-beta.0":
   version "1.1.0-beta.0"
@@ -6201,7 +6201,7 @@ es5-ext@^0.10.35, es5-ext@^0.10.50:
 es6-iterator@2.0.3, es6-iterator@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
-  integrity sha1-p96IkUGgWpSwhUQDstCg+/qY87c=
+  integrity sha512-zw4SRzoUkd+cl+ZoE15A9o1oQd920Bb0iOJMQkQhl3jNc03YqVjAhG7scf9C5KWRU/R13Orf588uCC6525o02g==
   dependencies:
     d "1"
     es5-ext "^0.10.35"

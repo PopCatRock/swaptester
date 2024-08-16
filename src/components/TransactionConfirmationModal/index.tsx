@@ -1,4 +1,4 @@
-import { ChainId } from '@popswap/sdk'
+import { ChainId } from '@popswap/cubesdk'
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import Modal from '../Modal'
@@ -93,7 +93,7 @@ function TransactionSubmittedContent({
 
           <ExternalLink href={getEtherscanLink(chainId, hash, 'transaction')}>
             <Text fontWeight={500} fontSize={14} color={theme.primary1}>
-              View on Bitrock Explorer
+              View on Meter scan
             </Text>
           </ExternalLink>
           <ButtonPrimary onClick={onDismiss} style={{ margin: '20px 0 0 0' }}>

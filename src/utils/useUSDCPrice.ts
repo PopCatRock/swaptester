@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, JSBI, Price, WETH } from '@popswap/sdk'
+import { ChainId, Currency, currencyEquals, JSBI, Price, WETH } from '@popswap/cubesdk'
 import { useMemo } from 'react'
 import { USDC } from '../constants'
 import { PairState, usePairs } from '../data/Reserves'

@@ -89,6 +89,6 @@ export default createReducer(initialState, builder =>
       }
     })
     .addCase(updateVersion, state => {
-      delete state.byUrl['https://unpkg.com/@popswap/token-list@latest']
+      delete state.byUrl['https://unpkg.com/@popswap/cube-token-list@latest']
     })
 )

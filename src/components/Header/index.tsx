@@ -1,14 +1,10 @@
-import { ChainId } from '@popswap/sdk'
+import { ChainId } from '@popswap/cubesdk'
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/svg/logo.png'
-import LogoDark from '../../assets/svg/logo_white.png'
-import Wordmark from '../../assets/svg/wordmark.png'
-import WordmarkDark from '../../assets/svg/wordmark_white.png'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
@@ -126,7 +122,7 @@ const BalanceText = styled(Text)`
 `
 
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
-  [ChainId.MAINNET]: 'Bitrock'
+  [ChainId.MAINNET]: 'Meter'
 }
 
 export default function Header() {
@@ -141,10 +137,11 @@ export default function Header() {
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img src={isDark ? LogoDark : Logo} alt="logo" />
+              <img src="https://cubes.lol/cubeswap-300h.png" alt="logo" width="60" height="60" />
             </UniIcon>
-            <TitleText>
-              <img style={{ marginLeft: '4px', marginTop: '4px' }} src={isDark ? WordmarkDark : Wordmark} alt="logo" />
+
+            <TitleText style={{ fontFamily: 'Impact, fantasy', fontSize: '24px', marginLeft: '4px', marginTop: '4px' }}>
+              {isDark ? 'CubeSwap' : 'CubeSwap'}
             </TitleText>
           </Title>
         </HeaderElement>
@@ -156,7 +153,7 @@ export default function Header() {
             <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
               {account && userEthBalance ? (
                 <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
-                  {userEthBalance?.toSignificant(4)} BROCK
+                  {userEthBalance?.toSignificant(4)} MTR
                 </BalanceText>
               ) : null}
               <Web3Status />

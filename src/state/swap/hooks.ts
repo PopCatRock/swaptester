@@ -1,7 +1,7 @@
 import useENS from '../../hooks/useENS'
 import { Version } from '../../hooks/useToggledVersion'
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@popswap/sdk'
+import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@popswap/cubesdk'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -35,7 +35,7 @@ export function useSwapActionHandlers(): {
       dispatch(
         selectCurrency({
           field,
-          currencyId: currency instanceof Token ? currency.address : currency === ETHER ? 'BROCK' : ''
+          currencyId: currency instanceof Token ? currency.address : currency === ETHER ? 'MTR' : ''
         })
       )
     },
@@ -194,10 +194,10 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam)
     if (valid) return valid
-    if (urlParam.toUpperCase() === 'BROCK') return 'BROCK'
-    if (valid === false) return 'BROCK'
+    if (urlParam.toUpperCase() === 'MTR') return 'MTR'
+    if (valid === false) return 'MTR'
   }
-  return 'BROCK' ?? ''
+  return 'MTR' ?? ''
 }
 
 function parseTokenAmountURLParameter(urlParam: any): string {

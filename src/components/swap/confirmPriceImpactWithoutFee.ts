@@ -1,4 +1,4 @@
-import { Percent } from '@popswap/sdk'
+import { Percent } from '@popswap/cubesdk'
 import { ALLOWED_PRICE_IMPACT_HIGH, PRICE_IMPACT_WITHOUT_FEE_CONFIRM_MIN } from '../../constants'
 
 /**

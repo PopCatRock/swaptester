@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, Price } from '@popswap/sdk'
+import { Currency, Price } from '@popswap/cubesdk'
 import { useContext } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

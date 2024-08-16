@@ -190,7 +190,7 @@ export default function WalletModal({
       }
     })
   }
-  
+
   // get wallets user can switch too, depending on device/browser
   function getOptions() {
     const isMetamask = window.ethereum && window.ethereum.isMetaMask
@@ -287,7 +287,7 @@ export default function WalletModal({
           <HeaderRow>{error instanceof UnsupportedChainIdError ? 'Wrong Network' : 'Error connecting'}</HeaderRow>
           <ContentWrapper>
             {error instanceof UnsupportedChainIdError ? (
-              <h5>Please connect your wallet to Bitrock.</h5>
+              <h5>Please connect your wallet to Meter.</h5>
             ) : (
               'Error connecting. Try refreshing the page.'
             )}

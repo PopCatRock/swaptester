@@ -1,4 +1,4 @@
-import { Currency, Pair } from '@popswap/sdk'
+import { Currency, Pair } from '@popswap/cubesdk'
 import React, { useState, useContext, useCallback } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { darken } from 'polished'

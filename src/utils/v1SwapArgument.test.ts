@@ -1,11 +1,10 @@
-import { CurrencyAmount, ETHER, Percent, Route, TokenAmount, Trade } from '@popswap/sdk'
-import { DAI, USDC } from '../constants'
+import { CurrencyAmount, ETHER, Percent, Route, TokenAmount, Trade } from '@popswap/cubesdk'
+import { USDC } from '../constants'
 import { MockV1Pair } from '../data/V1'
 import v1SwapArguments from './v1SwapArguments'
 
 describe('v1SwapArguments', () => {
   const USDC_WETH = new MockV1Pair('1000000', new TokenAmount(USDC, '1000000'))
-  const DAI_WETH = new MockV1Pair('1000000', new TokenAmount(DAI, '1000000'))
 
   // just some random address
   const TEST_RECIPIENT_ADDRESS = USDC_WETH.liquidityToken.address
@@ -45,7 +44,7 @@ describe('v1SwapArguments', () => {
     expect(result.value).toEqual('0x0')
   })
   it('exact token to token', () => {
-    const trade = Trade.exactIn(new Route([USDC_WETH, DAI_WETH], USDC), new TokenAmount(USDC, '100'))
+    const trade = Trade.exactIn(new Route([USDC_WETH], USDC), new TokenAmount(USDC, '100'))
     const result = v1SwapArguments(trade, {
       recipient: TEST_RECIPIENT_ADDRESS,
       allowedSlippage: new Percent('1', '100'),
@@ -56,7 +55,6 @@ describe('v1SwapArguments', () => {
     expect(result.args[1]).toEqual('0x61')
     expect(result.args[2]).toEqual('0x1')
     expect(result.args[4]).toEqual(TEST_RECIPIENT_ADDRESS)
-    expect(result.args[5]).toEqual(DAI.address)
     checkDeadline(result.args[3], 20 * 60)
     expect(result.value).toEqual('0x0')
   })
@@ -88,7 +86,7 @@ describe('v1SwapArguments', () => {
     expect(result.value).toEqual('0x0')
   })
   it('token to exact token', () => {
-    const trade = Trade.exactOut(new Route([USDC_WETH, DAI_WETH], USDC), new TokenAmount(DAI, '100'))
+    const trade = Trade.exactOut(new Route([USDC_WETH], USDC), new TokenAmount(USDC, '100'))
     const result = v1SwapArguments(trade, {
       recipient: TEST_RECIPIENT_ADDRESS,
       allowedSlippage: new Percent('1', '100'),
@@ -100,7 +98,6 @@ describe('v1SwapArguments', () => {
     expect(result.args[2]).toEqual(`0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff`)
     checkDeadline(result.args[3], 20 * 60)
     expect(result.args[4]).toEqual(TEST_RECIPIENT_ADDRESS)
-    expect(result.args[5]).toEqual(DAI.address)
     expect(result.value).toEqual('0x0')
   })
 })

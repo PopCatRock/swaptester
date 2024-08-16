@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@popswap/sdk'
+import { Trade, TradeType } from '@popswap/cubesdk'
 import React, { useContext, useMemo, useState } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

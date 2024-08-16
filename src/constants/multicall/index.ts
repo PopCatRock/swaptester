@@ -1,8 +1,8 @@
-import { ChainId } from '@popswap/sdk'
+import { ChainId } from '@popswap/cubesdk'
 import MULTICALL_ABI from './abi.json'
 
 const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '0xFfdE59FCbe1AE8B2a5015C24d954a3C1bD14DFA4'
+  [ChainId.MAINNET]: '0xb6d47CcfAd34970076854866edBBd9bBFbfD65ee'
 }
 
 export { MULTICALL_ABI, MULTICALL_NETWORKS }

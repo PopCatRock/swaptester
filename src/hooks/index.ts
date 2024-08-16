@@ -1,5 +1,5 @@
 import { Web3Provider } from '@ethersproject/providers'
-import { ChainId } from '@popswap/sdk'
+import { ChainId } from '@popswap/cubesdk'
 import { useWeb3React as useWeb3ReactCore } from '@web3-react/core'
 import { Web3ReactContextInterface } from '@web3-react/core/dist/types'
 import { useEffect, useState } from 'react'
@@ -18,26 +18,29 @@ export function useEagerConnect() {
   const [tried, setTried] = useState(false)
 
   useEffect(() => {
-    injected.isAuthorized().then(isAuthorized => {
-      if (isAuthorized) {
-        activate(injected, undefined, true).catch(error => {
-          console.error("Failed to activate due to authorization:", error)
-          setTried(true)
-        })
-      } else {
-        if (isMobile && window.ethereum) {
+    injected
+      .isAuthorized()
+      .then(isAuthorized => {
+        if (isAuthorized) {
           activate(injected, undefined, true).catch(error => {
-            console.error("Failed to activate on mobile with window.ethereum:", error)
+            console.error('Failed to activate due to authorization:', error)
             setTried(true)
           })
         } else {
-          setTried(true)
+          if (isMobile && window.ethereum) {
+            activate(injected, undefined, true).catch(error => {
+              console.error('Failed to activate on mobile with window.ethereum:', error)
+              setTried(true)
+            })
+          } else {
+            setTried(true)
+          }
         }
-      }
-    }).catch(error => {
-      console.error("Failed to check authorization:", error)
-      setTried(true)
-    })
+      })
+      .catch(error => {
+        console.error('Failed to check authorization:', error)
+        setTried(true)
+      })
   }, [activate])
 
   useEffect(() => {

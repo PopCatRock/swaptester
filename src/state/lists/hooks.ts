@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@popswap/sdk'
+import { ChainId, Token } from '@popswap/cubesdk'
 import { TokenInfo, TokenList } from '@popswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'

@@ -15,21 +15,20 @@ export const network = new NetworkConnector({
 })
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [7171]
+  supportedChainIds: [82]
 })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
-  rpc: { 7171: 'https://connect.bit-rock.io' },
-  bridge: 'https://bridge.bit-rock.io',
+  rpc: { 82: 'https://meter.blockpi.network/v1/rpc/public' },
+  bridge: 'https://passport.meter.io/#/',
   qrcode: true,
   pollingInterval: 15000
 })
 
 // mainnet only
 export const walletlink = new WalletLinkConnector({
-  url: 'https://connect.bit-rock.io',
-  appName: 'PopSwap',
-  appLogoUrl:
-    'https://popcatrock.xyz/assets/popcatr.png'
+  url: 'https://meter.blockpi.network/v1/rpc/public',
+  appName: 'CubeSwap',
+  appLogoUrl: 'https://cubes.lol/cubeswap-300h.png'
 })

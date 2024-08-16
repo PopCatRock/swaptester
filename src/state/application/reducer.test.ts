@@ -1,4 +1,4 @@
-import { ChainId } from '@popswap/sdk'
+import { ChainId } from '@popswap/cubesdk'
 import { createStore, Store } from 'redux'
 import { addPopup, removePopup, toggleSettingsMenu, toggleWalletModal, updateBlockNumber } from './actions'
 import reducer, { ApplicationState } from './reducer'

@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@popswap/sdk'
+import { Currency, ETHER, Token } from '@popswap/cubesdk'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
@@ -7,7 +7,7 @@ import { WrappedTokenInfo } from '../../state/lists/hooks'
 import uriToHttp from '../../utils/uriToHttp'
 
 const getTokenLogoURL = address =>
-  `https://popcatrock.github.io/token-list/src/tokens/CoinLogos/${address}.png`
+  `https://raw.githubusercontent.com/Excoinsevm/token-list/main/src/tokens/CoinLogos/${address}.png`
 const BAD_URIS: { [tokenAddress: string]: true } = {}
 
 const Image = styled.img<{ size: string }>`

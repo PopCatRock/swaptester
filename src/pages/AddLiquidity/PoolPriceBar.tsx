@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@popswap/sdk'
+import { Currency, Percent, Price } from '@popswap/cubesdk'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'

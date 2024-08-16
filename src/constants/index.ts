@@ -1,6 +1,6 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
-import { JSBI, Percent, Token, WETH } from '@popswap/sdk'
-import { ChainId } from '@popswap/sdk'
+import { JSBI, Percent, Token, WETH } from '@popswap/cubesdk'
+import { ChainId } from '@popswap/cubesdk'
 
 import { injected, walletconnect, walletlink } from '../connectors'
 
@@ -17,7 +17,7 @@ export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589
 export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
 
 const WETH_ONLY: ChainTokenList = {
-  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]]
 }
 
 // used to construct intermediary pairs for trading
@@ -53,8 +53,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
     [
       new Token(ChainId.MAINNET, '0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643', 8, 'cDAI', 'Compound Dai'),
       new Token(ChainId.MAINNET, '0x39AA39c021dfbaE8faC545936693aC917d5E7563', 8, 'cUSDC', 'Compound USD Coin')
-    ],
-   // [USDC, USDT],
+    ]
   ]
 }
 
@@ -140,4 +139,4 @@ export const MIN_ETH: JSBI = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(16))
 export const BETTER_TRADE_LINK_THRESHOLD = new Percent(JSBI.BigInt(75), JSBI.BigInt(10000))
 
 // the Uniswap Default token list lives here
-export const DEFAULT_TOKEN_LIST_URL = 'https://unpkg.com/@popswap/token-list@latest'
+export const DEFAULT_TOKEN_LIST_URL = 'https://unpkg.com/@popswap/cube-token-list@latest'
