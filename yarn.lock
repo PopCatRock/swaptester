@@ -1888,10 +1888,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
   integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
 
-"@popswap/cubesdk@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@popswap/cubesdk/-/cubesdk-0.0.1.tgz#dc3d47a5f3ab39fd1355882003d0fc1b201346d6"
-  integrity sha512-0i1+iQZGw4NxfPFd4kwwMH/OhNQ2Bd3fct0GptoAITL0iGHe3BXhS6740fgOm9WB1WuzFhY1BdM3yZ13y4Ac1Q==
+"@popswap/cubesdk@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@popswap/cubesdk/-/cubesdk-0.0.2.tgz#6660f022b011e256ad82d994cc214a625418c969"
+  integrity sha512-1/W/1ogBQWa4+PrkMms6gw6zDAexj5+QJBhNO3h4pvj2KY6wDJu6r9HK8SIVDW8D5d2/3oGV1dIi9vruaRD9sA==
   dependencies:
     "@bscswap/contracts" "1.0.2"
     big.js "^5.2.2"
