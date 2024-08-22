@@ -6,7 +6,7 @@
   "devDependencies": {
     "@ethersproject/experimental": "^5.0.1",
     "@popperjs/core": "^2.4.4",
-    "@popswap/cubesdk": "0.0.2",
+    "@popswap/cubesdk": "0.0.3",
     "@popswap/token-lists": "0.0.1",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
