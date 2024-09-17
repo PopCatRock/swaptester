@@ -137,7 +137,7 @@ export default function Header() {
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img src="https://cubes.lol/cubeswap-300h.png" alt="logo" width="60" height="60" />
+              <img src="hhttps://raw.githubusercontent.com/Excoinsevm/token-list/main/src/tokens/CoinLogos/0xE9BE839f344DE462d926d39205E6146c3320eEEf.png" alt="logo" width="60" height="60" />
             </UniIcon>
 
             <TitleText style={{ fontFamily: 'Impact, fantasy', fontSize: '24px', marginLeft: '4px', marginTop: '4px' }}>
