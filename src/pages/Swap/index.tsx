@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI, Trade } from '@popswap/cubesdk'
+import { CurrencyAmount, JSBI, Trade } from '@popswap/triangle'
 import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import ReactGA from 'react-ga'

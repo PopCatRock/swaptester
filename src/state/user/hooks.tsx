@@ -1,4 +1,4 @@
-import { ChainId, Pair, Token, Currency } from '@popswap/cubesdk'
+import { ChainId, Pair, Token, Currency } from '@popswap/triangle'
 import flatMap from 'lodash.flatmap'
 import { useCallback, useMemo } from 'react'
 import { shallowEqual, useDispatch, useSelector } from 'react-redux'

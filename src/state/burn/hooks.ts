@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from '@popswap/cubesdk'
+import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from '@popswap/triangle'
 import { useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { usePair } from '../../data/Reserves'

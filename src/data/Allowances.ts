@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@popswap/cubesdk'
+import { Token, TokenAmount } from '@popswap/triangle'
 import { useMemo } from 'react'
 
 import { useTokenContract } from '../hooks/useContract'

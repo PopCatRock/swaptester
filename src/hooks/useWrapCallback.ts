@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, ETHER, WETH } from '@popswap/cubesdk'
+import { Currency, currencyEquals, ETHER, WETH } from '@popswap/triangle'
 import { useMemo } from 'react'
 import { tryParseAmount } from '../state/swap/hooks'
 import { useTransactionAdder } from '../state/transactions/hooks'

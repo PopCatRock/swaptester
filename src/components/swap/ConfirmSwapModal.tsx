@@ -1,4 +1,4 @@
-import { currencyEquals, Trade } from '@popswap/cubesdk'
+import { currencyEquals, Trade } from '@popswap/triangle'
 import React, { useCallback, useMemo } from 'react'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

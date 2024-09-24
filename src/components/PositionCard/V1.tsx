@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
-import { Token, TokenAmount, WETH } from '@popswap/cubesdk'
+import { Token, TokenAmount, WETH } from '@popswap/triangle'
 
 import { Text } from 'rebass'
 import { AutoColumn } from '../Column'

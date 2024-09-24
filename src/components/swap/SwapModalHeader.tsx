@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@popswap/cubesdk'
+import { Trade, TradeType } from '@popswap/triangle'
 import React, { useContext, useMemo } from 'react'
 import { ArrowDown, AlertTriangle } from 'react-feather'
 import { Text } from 'rebass'

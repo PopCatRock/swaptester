@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@popswap/cubesdk'
+import { Trade, TradeType } from '@popswap/triangle'
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { Field } from '../../state/swap/actions'

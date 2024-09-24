@@ -1,5 +1,5 @@
 import { parseBytes32String } from '@ethersproject/strings'
-import { Currency, ETHER, Token } from '@popswap/cubesdk'
+import { Currency, ETHER, Token } from '@popswap/triangle'
 import { useMemo } from 'react'
 import { useDefaultTokenList } from '../state/lists/hooks'
 import { NEVER_RELOAD, useSingleCallResult } from '../state/multicall/hooks'

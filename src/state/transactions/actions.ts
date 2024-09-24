@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@popswap/cubesdk'
+import { ChainId } from '@popswap/triangle'
 
 export interface SerializableTransactionReceipt {
   to: string

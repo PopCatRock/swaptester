@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@popswap/cubesdk'
+import { Currency, ETHER, Token } from '@popswap/triangle'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'MTR'

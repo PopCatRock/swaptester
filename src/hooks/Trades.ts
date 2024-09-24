@@ -1,4 +1,4 @@
-import { CurrencyAmount, Pair, Currency, Token, Trade } from '@popswap/cubesdk'
+import { CurrencyAmount, Pair, Currency, Token, Trade } from '@popswap/triangle'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

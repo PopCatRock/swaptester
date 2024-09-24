@@ -1,4 +1,4 @@
-import { Trade } from '@popswap/cubesdk'
+import { Trade } from '@popswap/triangle'
 import React, { Fragment, memo, useContext } from 'react'
 import { ChevronRight } from 'react-feather'
 import { Flex } from 'rebass'

@@ -1,4 +1,4 @@
-import { Currency, Token } from '@popswap/cubesdk'
+import { Currency, Token } from '@popswap/triangle'
 import { transparentize } from 'polished'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'

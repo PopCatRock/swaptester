@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, currencyEquals, ETHER, JSBI, Token } from '@popswap/cubesdk'
+import { Currency, CurrencyAmount, currencyEquals, ETHER, JSBI, Token } from '@popswap/triangle'
 import React, { CSSProperties, memo, useContext, useMemo } from 'react'
 import { FixedSizeList } from 'react-window'
 import { Text } from 'rebass'

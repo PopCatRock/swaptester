@@ -1,4 +1,4 @@
-import { ChainId } from '@popswap/cubesdk'
+import { ChainId } from '@popswap/triangle'
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import Modal from '../Modal'

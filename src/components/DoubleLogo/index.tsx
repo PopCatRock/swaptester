@@ -1,4 +1,4 @@
-import { Currency } from '@popswap/cubesdk'
+import { Currency } from '@popswap/triangle'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

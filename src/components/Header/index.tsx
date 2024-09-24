@@ -1,4 +1,4 @@
-import { ChainId } from '@popswap/cubesdk'
+import { ChainId } from '@popswap/triangle'
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'

@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@popswap/cubesdk'
+import { Currency, ETHER, Token } from '@popswap/triangle'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 

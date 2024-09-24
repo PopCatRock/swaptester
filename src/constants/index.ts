@@ -1,10 +1,10 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
-import { JSBI, Percent, Token, WETH } from '@popswap/cubesdk'
-import { ChainId } from '@popswap/cubesdk'
+import { JSBI, Percent, Token, WETH } from '@popswap/triangle'
+import { ChainId } from '@popswap/triangle'
 
 import { injected, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = '0x65B006817eb02Ca5386f61f8C57eaaD367931D06'
+export const ROUTER_ADDRESS = '0xAA535B8882A6b70C87B11555A3B0cc4e00e63C3c'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -139,4 +139,4 @@ export const MIN_ETH: JSBI = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(16))
 export const BETTER_TRADE_LINK_THRESHOLD = new Percent(JSBI.BigInt(75), JSBI.BigInt(10000))
 
 // the Uniswap Default token list lives here
-export const DEFAULT_TOKEN_LIST_URL = 'https://unpkg.com/@popswap/cube-token-list@latest'
+export const DEFAULT_TOKEN_LIST_URL = 'https://unpkg.com/@popswap/triangle-token-list@latest'

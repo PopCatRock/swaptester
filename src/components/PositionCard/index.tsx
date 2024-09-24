@@ -1,4 +1,4 @@
-import { JSBI, Pair, Percent } from '@popswap/cubesdk'
+import { JSBI, Pair, Percent } from '@popswap/triangle'
 import { darken } from 'polished'
 import React, { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'react-feather'

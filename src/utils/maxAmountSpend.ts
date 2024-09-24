@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@popswap/cubesdk'
+import { CurrencyAmount, ETHER, JSBI } from '@popswap/triangle'
 import { MIN_ETH } from '../constants'
 
 /**

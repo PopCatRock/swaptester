@@ -1,4 +1,4 @@
-import { Percent } from '@popswap/cubesdk'
+import { Percent } from '@popswap/triangle'
 import React from 'react'
 import { ONE_BIPS } from '../../constants'
 import { warningSeverity } from '../../utils/prices'

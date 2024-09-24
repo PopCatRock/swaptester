@@ -1,4 +1,4 @@
-import { Currency, Token } from '@popswap/cubesdk'
+import { Currency, Token } from '@popswap/triangle'
 import React, { KeyboardEvent, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { useTranslation } from 'react-i18next'

@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, Percent, Route, TokenAmount, Trade } from '@popswap/cubesdk'
+import { CurrencyAmount, ETHER, Percent, Route, TokenAmount, Trade } from '@popswap/triangle'
 import { USDC } from '../constants'
 import { MockV1Pair } from '../data/V1'
 import v1SwapArguments from './v1SwapArguments'
