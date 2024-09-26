@@ -15,12 +15,12 @@ export const network = new NetworkConnector({
 })
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [82]
+  supportedChainIds: [616]
 })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
-  rpc: { 82: 'https://meter.blockpi.network/v1/rpc/public' },
+  rpc: { 616: 'https://e1u27ubrmz:1gWHLvZ9gf2kXoJjaanxlB_005uVxpvDaz8yXzQytf0@e1rbkfpfh2-e1py4v2ayj-rpc.eu1-azure.kaleido.io/' },
   bridge: 'https://passport.meter.io/#/',
   qrcode: true,
   pollingInterval: 15000
@@ -28,7 +28,7 @@ export const walletconnect = new WalletConnectConnector({
 
 // mainnet only
 export const walletlink = new WalletLinkConnector({
-  url: 'https://meter.blockpi.network/v1/rpc/public',
+  url: 'https://e1u27ubrmz:1gWHLvZ9gf2kXoJjaanxlB_005uVxpvDaz8yXzQytf0@e1rbkfpfh2-e1py4v2ayj-rpc.eu1-azure.kaleido.io/',
   appName: 'CubeSwap',
   appLogoUrl: 'https://cubes.lol/cubeswap-300h.png'
 })
