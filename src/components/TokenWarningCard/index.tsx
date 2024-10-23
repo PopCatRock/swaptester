@@ -79,7 +79,7 @@ export default function TokenWarningCard({ token, ...rest }: TokenWarningCardPro
               : token.name || token.symbol}
           </TYPE.main>
           <ExternalLink style={{ fontWeight: 400 }} href={getEtherscanLink(chainId, token.address, 'token')}>
-            <TYPE.blue> (View on Meterscan)</TYPE.blue>
+            <TYPE.blue> (View on explorer)</TYPE.blue>
           </ExternalLink>
         </AutoColumn>
       </AutoRow>
@@ -100,12 +100,12 @@ export function TokenWarningCards({ currencies }: { currencies: { [field in Fiel
           <TYPE.main color={'red2'}>Token imported</TYPE.main>
         </AutoRow>
         <TYPE.body color={'red2'}>
-          Anyone can create and name any ERC20 token on Meter, including creating fake versions of existing tokens
-          tokens that claim to represent projects that do not have a token.
+          Anyone can create and name any ERC20 token onchain, including creating fake versions of existing tokens to
+          represent projects that do not have a token.
         </TYPE.body>
         <TYPE.body color={'red2'}>
-          Similar to Meter Explorer, this site can load arbitrary tokens via token addresses. Please do your own
-          research before interacting with any MTR20 token.
+          Similar to Explorer, this site can load arbitrary tokens via token addresses. Please do your own research
+          before interacting with any POP20 token.
         </TYPE.body>
         {Object.keys(currencies).map(field => {
           const dismissed = field === Field.INPUT ? dismissedToken0 : dismissedToken1

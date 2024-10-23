@@ -122,7 +122,7 @@ const BalanceText = styled(Text)`
 `
 
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
-  [ChainId.MAINNET]: 'Meter'
+  [ChainId.MAINNET]: 'Popcateum'
 }
 
 export default function Header() {
@@ -137,11 +137,16 @@ export default function Header() {
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img src="hhttps://raw.githubusercontent.com/Excoinsevm/token-list/main/src/tokens/CoinLogos/0xE9BE839f344DE462d926d39205E6146c3320eEEf.png" alt="logo" width="60" height="60" />
+              <img
+                src="https://raw.githubusercontent.com/Excoinsevm/token-list/refs/heads/main/src/tokens/CoinLogos/0xdcE5726e3Bc8E1F574416978279bb0AE62AB3c15.png"
+                alt="logo"
+                width="60"
+                height="60"
+              />
             </UniIcon>
 
             <TitleText style={{ fontFamily: 'Impact, fantasy', fontSize: '24px', marginLeft: '4px', marginTop: '4px' }}>
-              {isDark ? 'CubeSwap' : 'CubeSwap'}
+              {isDark ? 'PopSwap' : 'PopSwap'}
             </TitleText>
           </Title>
         </HeaderElement>
@@ -153,7 +158,7 @@ export default function Header() {
             <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
               {account && userEthBalance ? (
                 <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
-                  {userEthBalance?.toSignificant(4)} MTR
+                  {userEthBalance?.toSignificant(4)} POP
                 </BalanceText>
               ) : null}
               <Web3Status />

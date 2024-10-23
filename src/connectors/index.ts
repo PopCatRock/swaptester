@@ -15,20 +15,20 @@ export const network = new NetworkConnector({
 })
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [82]
+  supportedChainIds: [1213]
 })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
-  rpc: { 82: 'https://meter.blockpi.network/v1/rpc/public' },
-  bridge: 'https://passport.meter.io/#/',
+  rpc: { 1213: 'https://dataseed.popcateum.org' },
+  bridge: '',
   qrcode: true,
   pollingInterval: 15000
 })
 
 // mainnet only
 export const walletlink = new WalletLinkConnector({
-  url: 'https://meter.blockpi.network/v1/rpc/public',
-  appName: 'CubeSwap',
-  appLogoUrl: 'https://cubes.lol/cubeswap-300h.png'
+  url: 'https://dataseed.popcateum.org',
+  appName: 'PopSwap',
+  appLogoUrl: 'https://raw.githubusercontent.com/Excoinsevm/token-list/refs/heads/main/src/tokens/CoinLogos/0xdcE5726e3Bc8E1F574416978279bb0AE62AB3c15.png'
 })

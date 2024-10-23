@@ -287,7 +287,7 @@ export default function WalletModal({
           <HeaderRow>{error instanceof UnsupportedChainIdError ? 'Wrong Network' : 'Error connecting'}</HeaderRow>
           <ContentWrapper>
             {error instanceof UnsupportedChainIdError ? (
-              <h5>Please connect your wallet to Meter.</h5>
+              <h5>Please connect your wallet to Popcateum.</h5>
             ) : (
               'Error connecting. Try refreshing the page.'
             )}

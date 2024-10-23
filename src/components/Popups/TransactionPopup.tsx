@@ -32,7 +32,7 @@ export default function TransactionPopup({
       </div>
       <AutoColumn gap="8px">
         <TYPE.body fontWeight={500}>{summary ?? 'Hash: ' + hash.slice(0, 8) + '...' + hash.slice(58, 65)}</TYPE.body>
-        <ExternalLink href={getEtherscanLink(chainId, hash, 'transaction')}>View on Meterscan</ExternalLink>
+        <ExternalLink href={getEtherscanLink(chainId, hash, 'transaction')}>View on explorer</ExternalLink>
       </AutoColumn>
     </RowNoFlex>
   )

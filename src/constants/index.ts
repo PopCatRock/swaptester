@@ -4,7 +4,7 @@ import { ChainId } from '@popswap/cubesdk'
 
 import { injected, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = '0x65B006817eb02Ca5386f61f8C57eaaD367931D06'
+export const ROUTER_ADDRESS = '0xAA535B8882A6b70C87B11555A3B0cc4e00e63C3c'
 
 // a list of tokens by chain
 type ChainTokenList = {

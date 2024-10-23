@@ -121,11 +121,11 @@ export default function Menu() {
             <Code size={14} />
             Code Soon
           </MenuItem>
-          <MenuItem id="link" href="https://t.me/cubesmeter">
+          <MenuItem id="link" href="">
             <MessageCircle size={14} />
             Telegram
           </MenuItem>
-          <MenuItem id="link" href="https://dextools.io/">
+          <MenuItem id="link" href="">
             <PieChart size={14} />
             Charts
           </MenuItem>
